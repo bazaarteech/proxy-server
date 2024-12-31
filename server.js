@@ -16,7 +16,8 @@ app.get('/proxy', (req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 3000; // Render يحدد المنفذ بشكل تلقائي
+// استخدم منفذ Render أو منفذ 3000 بشكل افتراضي
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Proxy server is running on http://localhost:${PORT}`);
 });
